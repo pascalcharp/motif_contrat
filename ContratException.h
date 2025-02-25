@@ -113,7 +113,7 @@ public:
 #define INVARIANTS() \
       verifieInvariant()
 
-#define CONDITIONINITIALE(f) f ;
+#define CONDITION_INITIALE(f) f ;
 
 #define ASSERTION(f)     \
       if (!(f)) throw AssertionException(__FILE__,__LINE__, #f);
@@ -127,7 +127,7 @@ public:
 // --- LE MODE RELEASE
 #else
 
-#define CONDITIONINITIALE(f);
+#define CONDITION_INITIALE(f);
 #define PRECONDITION(f);
 #define POSTCONDITION(f);
 #define INVARIANTS();

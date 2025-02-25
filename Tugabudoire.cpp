@@ -14,7 +14,7 @@ Tugabudoire::Tugabudoire(int init) : piston(init) {
 }
 
 void Tugabudoire::presser() {
-  CONDITIONINITIALE(int piston_avant = piston) ;
+  CONDITION_INITIALE(int piston_avant = piston) ;
 
   piston = (piston + 44) % 78 ;
 
